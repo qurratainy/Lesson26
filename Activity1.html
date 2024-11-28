@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes in JS</title>
+</head>
+<body>
+    <h2>Javascript Classes</h2>
+    <p>How to create and use Class in Javascript</p>
+    <p id="student1"></p>
+    <p id="student2"></p>
+    <script>
+        class student {// creating class
+            //constructor is a simple method that helps you to create object for the class
+            constructor(name,age){
+                this.name = name; 
+                this.age = age;   
+            }
+        }
+         std1 = new student("Ayla",25); //creating object with properties
+         document.getElementById("student1").innerHTML =
+         "My name is " + std1.name + " and my age is " + std1.age
+
+         std2 = new student("Steve",22);
+         document.getElementById("student2").innerHTML =
+         "My name is " + std2.name + " and  I am " + std2.age + " years old";
+
+    </script>
+</body>
+</html>
